@@ -6,7 +6,7 @@ html, body {
 	height: 100%;
 }
 html body {
-	background: #eee !important;	
+	background: #eee !important;
 	display: table;
 }
 .form-wrapper {
@@ -14,20 +14,19 @@ html body {
 	display: table-cell;
 	vertical-align: middle;
 }
-.form-outer{
-	margin:0 auto;
-	text-align:center;
-	display:block;
-	float:none;
+.form-outer {
+	margin: 0 auto;
+	display: block;
+	float: none;
 }
 .form-inner {
 	background-color: #fff;
 	/*border: 1px solid rgba(0,0,0,0.1);*/
-	border-radius:6px;
+	border-radius: 6px;
 	-webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
 	-moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
 	box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
-	overflow:hidden
+	overflow: hidden
 }
 .sign_head {
 	background: rgba(48,94,144,1);
@@ -37,10 +36,10 @@ html body {
 	background: -o-linear-gradient(top, rgba(48,94,144,1) 0%, rgba(36,74,117,1) 100%);
 	background: -ms-linear-gradient(top, rgba(48,94,144,1) 0%, rgba(36,74,117,1) 100%);
 	background: linear-gradient(to bottom, rgba(48,94,144,1) 0%, rgba(36,74,117,1) 100%);
- 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#305e90', endColorstr='#244a75', GradientType=0 );
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#305e90', endColorstr='#244a75', GradientType=0 );
 	padding: 15px;
 }
-.form-inner .btn-primary{
+.form-inner .btn-primary {
 	background: rgba(48,94,144,1);
 	background: -moz-linear-gradient(top, rgba(48,94,144,1) 0%, rgba(36,74,117,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(48,94,144,1)), color-stop(100%, rgba(36,74,117,1)));
@@ -48,10 +47,20 @@ html body {
 	background: -o-linear-gradient(top, rgba(48,94,144,1) 0%, rgba(36,74,117,1) 100%);
 	background: -ms-linear-gradient(top, rgba(48,94,144,1) 0%, rgba(36,74,117,1) 100%);
 	background: linear-gradient(to bottom, rgba(48,94,144,1) 0%, rgba(36,74,117,1) 100%);
- 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#305e90', endColorstr='#244a75', GradientType=0 );
-	font-weight:500;
-	font-size:20px;
-	margin-top:25px;
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#305e90', endColorstr='#244a75', GradientType=0 );
+	font-weight: 500;
+	font-size: 20px;
+	margin-top: 25px;
+}
+.form-inner .btn-primary:hover {
+	background: rgba(70,121,176,1);
+	background: -moz-linear-gradient(top, rgba(70,121,176,1) 0%, rgba(35,83,135,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(70,121,176,1)), color-stop(100%, rgba(35,83,135,1)));
+	background: -webkit-linear-gradient(top, rgba(70,121,176,1) 0%, rgba(35,83,135,1) 100%);
+	background: -o-linear-gradient(top, rgba(70,121,176,1) 0%, rgba(35,83,135,1) 100%);
+	background: -ms-linear-gradient(top, rgba(70,121,176,1) 0%, rgba(35,83,135,1) 100%);
+	background: linear-gradient(to bottom, rgba(70,121,176,1) 0%, rgba(35,83,135,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4679b0', endColorstr='#235387', GradientType=0 );
 }
 .sign_head img {
 	margin: 0 auto;
@@ -61,27 +70,32 @@ html body {
 	text-align: center;
 	margin: 0px auto 20px;
 }
-.form-signin h2 a{
-	color:#428bca !important;
+.form-signin h2 a {
+	color: #428bca !important;
 }
-.form-signin h2 a:hover{
-	color:#1a64b2 !important;
+.form-signin h2 a:hover {
+	color: #1a64b2 !important;
 }
 .form-signin {
 	padding: 30px;
 	margin: 0 auto;
 }
 .form-signin .checkbox {
-	margin:0px 0px 0px 22px;
-    text-align: left;
+	margin: 0px 0px 0px 22px;
+	text-align: left;
 	font-weight: normal;
-	font-size:16px;	
+	font-size: 16px;
+	cursor: pointer;
 }
-.form-signin .forgotPwd{
+.form-signin .forgotPwd {
 	font-weight: normal;
-	font-size:16px;
-	text-align:right;
-	margin-right:2px;
+	font-size: 16px;
+	text-align: right;
+	margin-right: 2px;
+}
+.form-signin .forgotPwd a:hover {
+	text-decoration: underline !important;
+	color: #428bca !important;
 }
 .form-signin .form-control {
 	position: relative;
@@ -95,22 +109,54 @@ html body {
 	z-index: 2;
 }
 .form-signin input[type="text"] {
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
 }
 .form-signin input[type="password"] {
 	margin-bottom: 15px;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
 }
-@media only screen and (max-width : 380px){
-	.form-signin .check, .form-signin .forgot{
-		display:block;
-		width:100%;
-		text-align:left;
-	}
-	.form-signin .forgotPwd{
-		text-align:left;
-		margin-top:10px;
-	}
+input[type=checkbox].css-checkbox {
+	position: absolute;
+	z-index: -1000;
+	left: -1000px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+input[type=checkbox].css-checkbox + label.css-label {
+	padding-left: 30px;
+	height: 20px;
+	display: inline-block;
+	line-height: 20px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	vertical-align: middle;
+	cursor: pointer;
+	font-weight:normal;
+	font-size:16px;
+}
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-position: 0 -20px;
+}
+label.css-label {
+	background-image: url(../images/checkbox.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+@media only screen and (max-width : 380px) {
+.form-signin .check, .form-signin .forgot {
+	display: block;
+	width: 100%;
+	text-align: left;
+}
+.form-signin .forgotPwd {
+	text-align: left;
+	margin-top: 10px;
+}
 }
