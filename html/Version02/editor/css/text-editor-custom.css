@@ -1,0 +1,94 @@
+.editor_outer{
+	/*border: 1px solid #ccc;
+	border-top:0px;
+    border-radius: 0 0 6px 6px;*/
+}
+.editor-head{	
+	border-radius: 6px 6px 0px 0px;
+	color:#fff;
+	padding:20px 15px;
+	font-size:26px;
+	font-weight:600px;	
+	background: rgba(47,95,144,1);
+	background: -moz-linear-gradient(top, rgba(47,95,144,1) 0%, rgba(36,75,119,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(47,95,144,1)), color-stop(100%, rgba(36,75,119,1)));
+	background: -webkit-linear-gradient(top, rgba(47,95,144,1) 0%, rgba(36,75,119,1) 100%);
+	background: -o-linear-gradient(top, rgba(47,95,144,1) 0%, rgba(36,75,119,1) 100%);
+	background: -ms-linear-gradient(top, rgba(47,95,144,1) 0%, rgba(36,75,119,1) 100%);
+	background: linear-gradient(to bottom, rgba(47,95,144,1) 0%, rgba(36,75,119,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f5f90', endColorstr='#244b77', GradientType=0 );
+}
+.editor_in{	
+	border: 1px solid #ccc;
+	border-top:0px;
+    border-radius: 0 0 6px 6px;
+	background: rgba(254,254,254,1);
+	background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(245,245,245,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(100%, rgba(245,245,245,1)));
+	background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(245,245,245,1) 100%);
+	background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(245,245,245,1) 100%);
+	background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(245,245,245,1) 100%);
+	background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(245,245,245,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f5f5f5', GradientType=0 );
+	padding:15px;
+}
+#editor, #editor1, #editor2 {
+	max-height: 200px;
+	height: 200px;
+	border-collapse: separate;
+	border:none;
+	margin: 0; 
+	padding:0;
+	box-sizing: content-box;	
+	/*overflow-y: scroll;*/
+	outline: none;
+	color:#4a4a4a;
+	line-height:24px;
+	font-size:20px;
+	overflow:hidden;
+}
+.context_outer .editor_in p{
+	color:#4a4a4a;
+	
+}
+.eiit-head {
+	margin-top:25px;
+	font-weight:900;
+}
+.btn-toolbar-custom{
+	margin:0px;
+	padding:0px 15px 0px 10px;
+	background-color:#c8cbd4;
+}
+[class^="icon-"], [class*=" icon-"]{
+	color:#fff;
+	font-size:18px;
+}
+.editor_outer .btn{
+	border:none !important;
+}
+.btn-toolbar-custom .btn-group{
+	margin:0px;
+}
+.editor_outer .btn-info{
+	border-radius:3px;
+	background-color:rgba(47, 95, 144, .3);	
+	font-weight:normal;	
+}
+.btn-group{
+	border-right:1px solid #e1e5ef;
+	padding:6px 5px;
+	margin:0px;
+	}
+.btn-group:last-child{
+	border:none;
+}
+div[data-role="editor-toolbar"] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dropdown-menu a {
+  cursor: pointer;
+}
