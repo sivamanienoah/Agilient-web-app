@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- meta keywords and discription -->
+<meta name="description" content="Default Description">
+<meta name="keywords" content="Agilient">
+<!-- meta keywords and discription end -->
+<title>Agilient</title>
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<!-- editor -->
+<link rel="stylesheet" href="editor/redactor.css" />
+<script src="editor/redactor.min.js"></script>
+<!-- editor end -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/responsive-style.css" type="text/css">
+<!--[if lt IE 9]>
+     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<header class="header">
+  <div class="container-fluid"> <a class="menu_btn"><img src="images/menu.png" width="41" height="31" alt="menu"></a> <a class="logo" href="#"><img src="images/logo.png" width="172" height="40" alt="Agilient"></a>
+    <div class="dropdown user_select">
+      <button class="btn-select dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Joshua Orr <span class="btm_arrow"></span> </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#">profile</a></li>
+        <li><a href="#">password</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="menu_toggle">
+  <h2 class="menu_head">Client Name <a class="togout_menu active"><img src="images/menu.png" width="41" height="31" alt="menu"></a></h2>
+  <div class="menu_toggleout">
+    <div class="menu_togglein mCustomScrollbar">
+      <h3 class="menu_subhead">Organisation Structure</h3>
+      <nav id="" class="treeview">
+        <ul id="tree3">
+          <li><a href="#">Entity 1</a>
+            <ul>
+              <li><a href="#">Assessment 1</a></li>
+              <li><a href="#">Assessment 2</a></li>
+              <li><a href="#">Assessment 3</a></li>
+              <li><a href="#">Entity 5</a>
+                <ul>
+                  <li><a href="#">Entity 6</a>
+                    <ul>
+                      <li><a href="#">Assessment 5</a></li>
+                      <li><a href="#">Assessment 6</a></li>
+                    </ul>
+                  </li>
+                  <li class="active"><a href="#">Assessment 4</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Assessment 2</a></li>
+              <li><a href="#">Assessment 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Entity 2</a>
+            <ul>
+              <li><a href="#">Assessment 1</a></li>
+              <li><a href="#">Assessment 2</a></li>
+              <li><a href="#">Assessment 3</a></li>
+              <li><a href="#">Entity 5</a>
+                <ul>
+                  <li><a href="#">Entity 6</a>
+                    <ul>
+                      <li><a href="#">Assessment 5</a></li>
+                      <li><a href="#">Assessment 6</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Assessment 4</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Assessment 2</a></li>
+              <li><a href="#">Assessment 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Entity 3</a>
+            <ul>
+              <li><a href="#">Assessment 1</a></li>
+              <li><a href="#">Assessment 2</a></li>
+              <li><a href="#">Assessment 3</a></li>
+              <li><a href="#">Entity 5</a>
+                <ul>
+                  <li><a href="#">Entity 6</a>
+                    <ul>
+                      <li><a href="#">Assessment 5</a></li>
+                      <li><a href="#">Assessment 6</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Assessment 4</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Assessment 2</a></li>
+              <li><a href="#">Assessment 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Entity 4</a>
+            <ul>
+              <li><a href="#">Assessment 1</a></li>
+              <li><a href="#">Assessment 2</a></li>
+              <li><a href="#">Assessment 3</a></li>
+              <li><a href="#">Entity 5</a>
+                <ul>
+                  <li><a href="#">Entity 6</a>
+                    <ul>
+                      <li><a href="#">Assessment 5</a></li>
+                      <li><a href="#">Assessment 6</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Assessment 4</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Assessment 2</a></li>
+              <li><a href="#">Assessment 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="col-xs-12">
+        <div class="btn_set">
+          <div class="col-xs-6 dropdown">
+            <div class="row">
+              <div class="new_entity btnSave">New Entity</div>
+            </div>
+          </div>
+          <div class="col-xs-6 dropdown">
+            <div class="row">
+              <div class="new_assess btnSave2">New Assessment</div>
+            </div>
+          </div>
+        </div>
+        <div id="commt-box" class="commt-box">
+          <div class="input-group-btn">
+            <input class="form-control custom-control" type="text" placeholder="Entity Name" id="">
+          </div>
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown"> <span data-bind="label">Select One</span>&nbsp;<span class="caret"></span> </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Entity 1</a></li>
+              <li><a href="#">Entity 2</a></li>
+            </ul>
+          </div>
+          <div class="btn-save">
+            <button class="btn btn-primary"> <span>Save</span> </button>
+          </div>
+          <div class="clc">
+            <button type="button" class="btn btn-info close-btn" data-dismiss="modal"><span>Cancel</span></button>
+          </div>
+        </div>
+        <div id="commt-box2" class="commt-box">
+          <div class="input-group-btn">
+            <input class="form-control custom-control" type="text" placeholder="Assessment Name" id="">
+          </div>
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown"> <span data-bind="label">Select One</span>&nbsp;<span class="caret"></span> </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Assessment 1</a></li>
+              <li><a href="#">Assessment 2</a></li>
+            </ul>
+          </div>
+          <div class="btn-save">
+            <button class="btn btn-primary"> <span>Save</span> </button>
+          </div>
+          <div class="clc">
+            <button type="button" class="btn btn-info close-btn" data-dismiss="modal"><span>Cancel</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<a class="set_icon" href="#"></a> --></div>
+</div>
+<div class="container-fluid">
+  <div class="row main_content">
+    <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
+      <div class="row">
+        <p class="main_headsub">Parent Entity Name</p>
+        <h2 class="main_head">Assessment Name</h2>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 setting_blue">
+      <div class="row"> <a class="setting_ic" href="#">Configure</a> 
+        <!--<img src="images/set_arrow.png" alt="setting">--> 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="setmenu_outerwrap">
+  <div class="container-fluid setmenu_outer">
+    <div class="row"> 
+      <!--asset criticality -->
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> <a href="#" data-toggle="modal" data-target="#myModal4" class="setmenu_blog">
+        <h3 class="set_head">Asset Criticality</h3>
+        <img src="images/icon_criticality.png" width="71" height="71" alt="Rick Matrix"> </a> </div>
+      <!--asset criticality popup-->
+      <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="gridSystemModalLabel">Asset Criticality</h4>
+              <!--popup--> 
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row"> </br>
+                  </br>
+                  </br>
+                  </br>
+                  </br>
+                  </br>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      <!-- asset criticality end--> 
+      <!--threat matrix -->
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> <a href="#" data-toggle="modal" data-target="#myModal3" class="setmenu_blog">
+        <h3 class="set_head">Threat Matrix</h3>
+        <img src="images/icon_threatlibrary.png" width="71" height="71" alt="Rick Matrix"> </a> </div>
+      <!--threat Matrix popup-->
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="gridSystemModalLabel">Threat Matrix</h4>
+              <!--popup--> 
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row"> </br>
+                  </br>
+                  </br>
+                  </br>
+                  </br>
+                  </br>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      <!-- threat Matrix end--> 
+      <!--vulnerability rating -->
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> <a href="#" data-toggle="modal" data-target="#myModal2" class="setmenu_blog">
+        <h3 class="set_head">Vulnerability Rating</h3>
+        <img src="images/icon_vulnerabilityrating.png" width="71" height="71" alt="Rick Matrix"> </a> </div>
+      <!--rist tolerance popup-->
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="gridSystemModalLabel">Vulnerability Rating</h4>
+              <!--popup--> 
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row"> </br>
+                  </br>
+                  </br>
+                  </br>
+                  </br>
+                  </br>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      <!-- vulnerability rating end--> 
+      <!--risk matrices -->
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> <a href="#" data-toggle="modal" data-target="#myModal" class="setmenu_blog">
+        <h3 class="set_head">Risk Matrices</h3>
+        <img src="images/icon_riskmatrix.png" width="71" height="71" alt="Rick Matrix"> </a> </div>
+      <!--risk matrix popup-->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="gridSystemModalLabel">Risk Matrices</h4>
+              <!--popup--> 
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row"> </br>
+                  </br>
+                  </br>
+                  </br>
+                  </br>
+                  </br>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+          <!-- /.modal-content --> 
+        </div>
+        <!-- /.modal-dialog --> 
+      </div>
+      <!-- /.modal --> 
+      <!-- risk matrices end--> 
+    </div>
+  </div>
+</div>
+
+<!-- assessment context -->
+<div class="container-fluid context_outer">
+  <div class="text-center">
+    <h2>Assessment Context</h2>
+    <p>ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidun Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor</p>
+  </div>
+  <!-- nav tabs -->
+  <div class="row tabmenu_outer">
+    <ul class="nav-tabs tabmenu" role="tablist">
+      <li class="tab_first active"><a href="#external" role="tab" data-toggle="tab">External</a></li>
+      <li><a href="#internal" role="tab" data-toggle="tab">Internal</a></li>
+      <li class="tab_last"><a href="#security" role="tab" data-toggle="tab">Security Risk</a></li>
+    </ul>
+  </div>
+  <!-- tab content -->
+  <div class="tab-content"> 
+    <!-- external content blog -->
+    <div class="tab-pane slide-left in active" id="external"> 
+      <!-- strategic context blog -->
+      <div class="editor_outer">
+        <div class="editor-head">External / Strategic Context</div>
+        <!-- editor -->
+        <div class="editor_in">
+          <textarea class="content" name="content">
+                <p>Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidun</p>
+                <p><b>Lorem ipsum dolor sit amet</b></p>
+                <p>ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidun Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidun</p>
+            </textarea>
+        </div>
+      </div>
+      <!--strategic context blog--> 
+    </div>
+    <!-- internal content blog -->
+    <div class="tab-pane slide-left in" id="internal"> 
+      <!-- strategic context blog -->
+      <div class="editor_outer">
+        <div class="editor-head">Internal / Strategic Context</div>
+        <!-- editor -->
+        <div class="editor_in">
+          <textarea class="content" name="content">
+                <p>Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidun</p>
+                <p><b>Lorem ipsum dolor sit amet</b></p>
+                <p>ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidun Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidun</p>
+            </textarea>
+        </div>
+        <!--editor end--> 
+      </div>
+      <!--strategic context blog--> 
+    </div>
+    <!-- security content blog -->
+    <div class="tab-pane slide-left in" id="security"> 
+      <!-- strategic context blog -->
+      <div class="editor_outer">
+        <div class="editor-head">Security Risk / Strategic Context</div>
+        <!-- editor -->
+        <div class="editor_in">
+          <textarea class="content" name="content">
+                <p>Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidun</p>
+                <p><b>Lorem ipsum dolor sit amet</b></p>
+                <p>ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidun Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidun</p>
+            </textarea>
+        </div>
+        <!--editor end--> 
+      </div>
+      <!--strategic context blog--> 
+    </div>
+  </div>
+  <!-- tab content end --> 
+</div>
+<!-- assessment context end --> 
+
+<!-- add table content -->
+<div class="container-fluid asset_outer"> 
+  <!-- Nav tabs -->
+  <div class="row tabtable_outer">
+    <ul class="col-xs-12 nav-tabs tabtable_menu" role="tablist2">
+      <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3 tab_first active"><a href="#assets" role="tab" data-toggle="tab"><img alt="Asset" src="images/icon_asset.png"><span>Assets</span></a></li>
+      <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><a href="#threats" role="tab" data-toggle="tab"><img alt="Threat" src="images/icon_threat.png"><span>Threats</span></a></li>
+      <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><a href="#vulnerability" role="tab" data-toggle="tab"><img  alt="Vulnerabilities" src="images/icon_vulnerabilities.png"><span>Vulnerabilities</span></a></li>
+      <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3 tab_last"><a href="#securityrisk" role="tab" data-toggle="tab"><img alt="Security Risk" src="images/icon_securityrisk.png"><span>Security Risk</a></span></li>
+    </ul>
+  </div>
+  <div class="tab-content">
+    <div class="tab-pane slide-left in active" id="assets">
+      <div class="text-center">
+        <h2>Add Assets</h2>
+        <p>ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidun Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor</p>
+      </div>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Asset Details</th>
+            <th>Asset Category</th>
+            <th>Criticality</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Asset Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="add_btn">Add Asset</div>
+    </div>
+    <div class="tab-pane slide-left in" id="threats">
+      <div class="text-center">
+        <h2>Add Threats</h2>
+        <p>ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidun Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor</p>
+      </div>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Threats Details</th>
+            <th>Threats Category</th>
+            <th>Criticality</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Threats Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="add_btn">Add Thread</div>
+    </div>
+    <div class="tab-pane slide-left in" id="vulnerability">
+      <div class="text-center">
+        <h2>Add Vulnerability</h2>
+        <p>ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidun Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor</p>
+      </div>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Vulnerability Details</th>
+            <th>Vulnerability Category</th>
+            <th>Criticality</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Vulnerability Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="add_btn">Add Vulnerability</div>
+    </div>
+    <div class="tab-pane slide-left in" id="securityrisk">
+      <div class="text-center">
+        <h2>Add Security Risk</h2>
+        <p>ligula suspendisse nulla pretium, rhoncus tempor fermentum, enim integer ad vestibulum volutpat. Nisl rhoncus turpis est, vel elit, congue wisi enim nunc ultricies sit, magna tincidun Lorem ipsum dolor sit amet, ligula suspendisse nulla pretium, rhoncus tempor</p>
+      </div>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Security Risk Details</th>
+            <th>Security Risk Category</th>
+            <th>Criticality</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+          <tr>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Details" type="text"></td>
+            <td><input class="form-control" id="inputdefault" placeholder="Security Risk Category" type="text"></td>
+            <td><div class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Criticality </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                </ul>
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="add_btn">Add Security Risk</div>
+    </div>
+  </div>
+</div>
+<!-- add table content --> 
+
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script src="js/function.js"></script>
+</body>
+</html>
