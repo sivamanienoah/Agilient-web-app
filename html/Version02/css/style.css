@@ -352,7 +352,7 @@ a:focus {
 /*left menu tree end*/
 .main_content {
 	padding: 30px 15px 15px;
-	margin-bottom:-15px;
+	margin-bottom:-10px;
 	background: rgba(255,255,255,1);
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(243,243,243,1)));
@@ -450,7 +450,7 @@ a:focus {
 }
 /* assessment context */
 .context_outer{
-	padding-top:15px;
+	padding-top:10px;
 }
 .context_outer h2 {
 	font-size: 28px;
