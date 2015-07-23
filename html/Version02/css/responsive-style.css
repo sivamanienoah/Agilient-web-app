@@ -1,0 +1,197 @@
+@media only screen and (min-width : 1380px) {
+	.tabtable_menu li a::after {
+		left: 60%;
+		width: 80%;
+	}
+}
+@media only screen and (max-width : 1279px) {
+	/*.tabtable_menu li a::after {
+		left: 70%;
+		width: 60%;
+	}*/
+	.set_head {
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width : 850px) {
+	.tabtable_menu > li > a {
+		font-size: 22px;
+	}
+	.tabtable_menu img {
+		width: 80px;
+	}
+	.tabtable_menu li a::after {
+		left: 70%;
+		width: 60%;
+	}
+	.tabtable_menu {
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (max-width : 767px) {
+	.tabtable_menu .col-xs-3 {
+		padding: 0px;
+		width: 26%;
+	}
+	.tabtable_menu .col-xs-3:first-child {
+		width: 20%;
+	}
+	.tabtable_menu li a::after {
+		left: 70%;
+		width: 62%;
+	}
+	.tabtable_menu li.tab_first a::after {
+		left: 76%;
+		width: 66%;
+	}
+	.setting_blue {
+		text-align: center;
+	}
+	.setmenu_outer::after {
+		right: 42%;
+	}
+	p, table, .asset_outer .tab-content input, .asset_outer .dropdown .dropdown-toggle, .asset_outer .dropdown-menu {
+		font-size: 16px;
+	}
+	.asset_outer .tab-content input, .asset_outer .dropdown .dropdown-toggle {
+		height: auto;
+	}
+	.asset_outer .dropdown .dropdown-toggle {
+		background: rgba(0, 0, 0, 0) url("../images/btm-arrow.png") no-repeat 95% 54% / 10px auto;
+	}
+	.asset_outer .table > thead > tr > th, .asset_outer .table > tbody > tr > th, .asset_outer .table > tbody > tr > td, .asset_outer .table > tfoot > tr > th, .asset_outer .table > thead > tr > td, .asset_outer .table > tbody > tr > td, .asset_outer .table > tfoot > tr > td {
+		padding: 6px;
+	}
+	.form-control, .asset_outer .dropdown .dropdown-toggle {
+		padding: 6px;
+	}
+	.asset_outer .dropdown-menu{
+		min-width:initial;
+	}
+	.asset_outer .dropdown-menu > li > a{
+		padding:3px 5px;		
+	}
+	.asset_outer thead th {
+		padding: 5px !important;
+	}
+	.main_content, .setmenu_outer, .context_outer, .asset_outer {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.asset_outer thead th:last-child{
+		width:30%;
+	}
+	.asset_outer thead th{
+		width:35%;
+	}
+}
+@media only screen and (max-width : 480px) {
+	.tabtable_menu img {
+		width: 80px;
+	}
+	.tabtable_menu a span {
+		margin-bottom: 20px;
+		display: block;
+	}
+	 .tabtable_menu li a, .tabtable_menu li:hover a, .tabtable_menu li:active a,, .tabtable_menu li.active a {
+	 font-size:22px;
+	 margin-bottom:20px;
+	 display:inline-block;
+	}
+	.tabtable_menu .col-xs-3, .tabtable_menu .col-xs-3:first-child {
+		padding: 0px;
+		width: 50%;
+	}
+	.tabtable_menu li a::after {
+		left: 73%;
+		width: 54%;
+	}
+	.tabtable_menu li a::after {
+		border: none;
+	}
+	.tabtable_menu {
+		margin-bottom: 0px;
+	}
+	.asset_outer .table > thead > tr > th, .asset_outer .table > tbody > tr > th, .asset_outer .table > tbody > tr > td, .asset_outer .table > tfoot > tr > th, .asset_outer .table > thead > tr > td, .asset_outer .table > tbody > tr > td, .asset_outer .table > tfoot > tr > td {
+		padding: 5px;
+	}
+	.asset_outer .tab-content input, .asset_outer .dropdown .dropdown-toggle, .asset_outer .dropdown-menu {
+		font-size: 14px;
+	}
+	.tabtable_menu li a, .tabtable_menu li:hover a, .tabtable_menu li:active a {
+		font-size: 20px;
+	}
+	.menu_toggle {
+		width: 100%;
+		min-width: 100%;
+		left: 0;
+	}
+}
+@media only screen and (max-width : 479px) {
+	.tabmenu > li > a {
+		padding: 6px 6px;
+		font-size: 17px;
+	}
+	.user_select {
+		display: block;
+		float: none;
+		margin: 15px auto 5px;
+	}
+	.logo {
+		float: none;
+	}
+	.btn-select {
+		padding-left: 20px;
+	}
+	.btn-select, .dropdown-menu {
+		width: 100%;
+		text-align: left;
+	}
+	.asset_outer thead th {
+		width: 33%;
+	}
+	.btn_set .dropdown {
+		margin-bottom: 15px;
+		overflow: hidden;
+		width: 100%;
+	}
+	.new_entity, .new_assess {
+		margin-right: 0px;
+		background-position: 3% 50%;
+		padding-left: 60px;
+	}
+	.new_assess {
+		background-position: 4% 50%;
+		padding-left: 60px;
+	}
+	.branch > a, .branch > i {
+		left: 15px;
+	}
+	.branch > ul > li > a, .branch > ul > li > i {
+		left: 50px;
+	}
+	.branch > ul > li > i {
+		left: 30px;
+	}
+	.branch > ul > li > i + a {
+		left: 30px;
+	}
+	.branch > ul > li > ul > li > a, .branch > ul > li > ul > li > i {
+		left: 100px;
+	}
+	.branch > ul > li > ul > li > i {
+		left: 80px;
+	}
+	.branch > ul > li > ul > li > i + a {
+		left: 80px;
+	}
+	.branch > ul > li > ul > li > ul > li > a, .branch > ul > li > ul > li > ul > li > i {
+		left: 130px;
+	}
+	.menu_togglein {
+		height: 72%;
+	}
+	.asset_outer .dropdown-menu {
+		font-size: 12px;
+	}
+}
