@@ -601,7 +601,7 @@ a:focus {
 	top:-10px;
 	z-index:9;
 }
-.tabtable_menu li.active img, .tabtable_menu li.active a:hover img, .tabtable_menu li.active a span, .tabtable_menu li.active a:hover span{
+.tabtable_menu li.active img, .tabtable_menu li.active a:hover img, .tabtable_menu li.active:hover a img, .tabtable_menu li.active a span, .tabtable_menu li.active a:hover span{
 	top:-20px;
 	z-index:9;
 }
