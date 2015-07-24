@@ -18,14 +18,24 @@
 		font-size: 22px;
 	}
 	.tabtable_menu img {
-		width: 80px;
+		width: 82px;
+		height: 82px;
+	}
+	.tabtable_menu a:hover img, .tabtable_menu:focus img, .tabtable_menu li.active img{
+		width: 102px;
+		height: 102px;
+	}
+	.tabtable_menu li.active img, .tabtable_menu li.active a:hover img{
+		width: 122px;
+		height: 122px;
 	}
 	.tabtable_menu li a::after {
 		left: 70%;
 		width: 60%;
+		top:38px;
 	}
 	.tabtable_menu {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 }
 @media only screen and (max-width : 767px) {
@@ -87,7 +97,28 @@
 }
 @media only screen and (max-width : 480px) {
 	.tabtable_menu img {
-		width: 80px;
+		width: 62px;
+		height: 62px;
+	}
+	.tabtable_menu a:hover img, .tabtable_menu:focus img, .tabtable_menu li.active img{
+		width: 82px;
+		height: 82px;
+	}
+	.tabtable_menu li.active img, .tabtable_menu li.active a:hover img{
+		width: 102px;
+		height: 102px;
+	}
+	.clb{
+		clear:both;
+	}
+	.tabtable_menu li.tab_last, .clb{
+		margin-top:10px;
+	}
+	.tabtable_menu{
+		min-height: 310px;
+	}
+	.tabtable_menu a span{
+		margin-bottom:0px;
 	}
 	.tabtable_menu a span {
 		margin-bottom: 20px;
