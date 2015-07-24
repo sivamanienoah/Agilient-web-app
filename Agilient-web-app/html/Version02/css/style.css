@@ -580,6 +580,7 @@ a:focus {
 	-o-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
+	margin-bottom:0px;
 }
 .tabtable_menu > li > a {
 	font-weight: bold;
@@ -596,7 +597,7 @@ a:focus {
 	margin: 0;
 	padding: 0;
 }
-.tabtable_menu a:hover img, .tabtable_menu a:hover span, .tabtable_menu:focus span, .tabtable_menu:focus img  {
+.tabtable_menu li:hover img, .tabtable_menu li:hover span, .tabtable_menu:focus span, .tabtable_menu:focus img  {
 	top:-10px;
 	z-index:9;
 }
@@ -604,7 +605,7 @@ a:focus {
 	top:-20px;
 	z-index:9;
 }
-.tabtable_menu a:hover img, .tabtable_menu:focus img, .tabtable_menu li.active img{
+.tabtable_menu li:hover img, .tabtable_menu:focus img, .tabtable_menu li.active img{
 	width:122px;
     height:122px;
 }
@@ -612,7 +613,7 @@ a:focus {
 	width:142px;
     height:142px;
 }
-.tabtable_menu a:hover img, .tabtable_menu a:hover span{
+.tabtable_menu li:hover img, .tabtable_menu li:hover span{
 	top:-10px;
 	z-index:9;
 }

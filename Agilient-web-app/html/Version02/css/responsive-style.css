@@ -100,7 +100,7 @@
 		width: 62px;
 		height: 62px;
 	}
-	.tabtable_menu a:hover img, .tabtable_menu:focus img, .tabtable_menu li.active img{
+	.tabtable_menu li:hover img, .tabtable_menu li:focus img, .tabtable_menu li.active img{
 		width: 82px;
 		height: 82px;
 	}
