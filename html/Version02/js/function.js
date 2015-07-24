@@ -129,11 +129,17 @@ $(function()
 {
 	
 	$('.content').redactor({
-		/*(this).find('.redactor-editor').addClass('mCustomScrollbar')*/
-		focus: true
-		
+		focus: true,
+		plugins: ['fontfamily', 'fontsize', 'table', 'fullscreen', 'imagemanager', 'clips', 'fontcolor', 'textexpander'],
+		imageUpload: '/upload.php',
+		imageManagerJson: '/images/images.json',
+		textexpander: [
+			['lorem', 'Lorem ipsum...'],
+			['text', 'Text']
+		]		
 	});
 	$('redactor-editor')
+	
 });
 /* editor start end*/ 
 
