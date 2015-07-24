@@ -13,7 +13,7 @@
 .redactor-box {
   position: relative;
   overflow: visible;
-  margin-bottom: 24px;
+  margin-bottom: 0px;
 }
 .redactor-box textarea {
   display: block;
@@ -86,11 +86,12 @@ body .redactor-box-fullscreen {
   position: relative;
   overflow: auto;
   margin: 0 !important;
-  padding: 20px;
+  padding: 15px 15px 0px;
   min-height: 80px;
+  max-height:650px;  
   outline: none;
   white-space: normal;
-  border: 1px solid #eee;
+  /*border: 1px solid #eee;*/
   font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif !important;
   font-size: 14px;
   line-height: 1.6em;
